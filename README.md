@@ -21,6 +21,20 @@ make dev               # run the API at http://localhost:8000
 
 Check it works: open http://localhost:8000/health
 
+## Commands
+
+| Command          | Description                                      |
+| ---------------- | ------------------------------------------------ |
+| `make setup`     | Install dependencies and pre-commit hooks        |
+| `make up`        | Start Postgres and Redis (Docker)                |
+| `make down`      | Stop the containers                              |
+| `make dev`       | Run the API with auto-reload                     |
+| `make test`      | Run the tests                                    |
+| `make lint`      | Check code style (ruff)                          |
+| `make format`    | Auto-fix style and formatting                    |
+| `make typecheck` | Check types (mypy)                               |
+| `make check`     | Run lint + typecheck + tests (same as CI)        |
+
 ## Project structure
 
 ```
