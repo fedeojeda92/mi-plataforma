@@ -35,6 +35,11 @@ Check it works: open http://localhost:8000/health
 | `make typecheck` | Check types (mypy)                               |
 | `make check`     | Run lint + typecheck + tests (same as CI)        |
 
+## Secrets
+
+- Real values live in `.env`, which is git-ignored. Only `.env.example` (with placeholders) is committed.
+- [gitleaks](https://github.com/gitleaks/gitleaks) runs as a pre-commit hook and blocks any commit that contains an API key or password.
+
 ## Project structure
 
 ```
