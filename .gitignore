@@ -1,0 +1,21 @@
+
+# Material del curso (no es parte del proyecto)
+apps/api/tests/misiones/
+apps/web/tests/misiones/
+.curso/
+
+# Secretos
+.env
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Caches de herramientas
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+.claude/commands/revisar-mision.md
+.claude/commands/simulacro.md
